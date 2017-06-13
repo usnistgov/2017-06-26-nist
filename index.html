@@ -2,18 +2,18 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+venue: "National Institute of Standards and Technology"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Lecture Room D, 100 Bureau Drive, Gaithersburg, MD"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "39.135171, -77.215829"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+humandate: "Jun 26, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "1:00 pm - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2017-06-26      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2017-06-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Dilip Banerjee"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Bill Krekelberg", "Gretchen Greene", "Jon Guyer"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["dilip.banerjee@nist.gov"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -46,11 +46,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   scrolling="auto">
 </iframe>
 {% endif %}
-
-<h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
-and our administrator may contact you if we need any extra information.</h4>
 
 <h2 id="general">General Information</h2>
 
@@ -378,62 +373,6 @@ and our administrator may contact you if we need any extra information.</h4>
   </div>
 </div> <!-- End of 'shell' section. -->
 
-<div id="git"> <!-- Start of 'Git' section. GitHub browser compatability
-           is given at https://help.github.com/articles/supported-browsers/-->
-  <h3>Git</h3>
-  <p>
-    Git is a version control system that lets you track who made changes
-    to what when and has options for easily updating a shared or public
-    version of your code
-    on <a href="https://github.com/">github.com</a>. You will need a
-    <a href="https://help.github.com/articles/supported-browsers/">supported</a>
-    web browser (current versions of Chrome, Firefox or Safari,
-    or Internet Explorer version 9 or above).
-  </p>
-  <p>
-    You will need an account at <a href="https://github.com/">github.com</a>
-    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
-    you to create a GitHub account if you don't have one already.
-    Please consider what personal information you'd like to reveal. For
-    example, you may want to review these
-    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-    for keeping your email address private</a> provided at GitHub.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="git-windows">Windows</h4>
-      <p>
-        Git should be installed on your computer as part of your Bash
-        install (described above).
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-macosx">Mac OS X</h4>
-      <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
-      <p>
-        <strong>For OS X 10.9 and higher</strong>, install Git for Mac
-        by downloading and running the most recent "mavericks" installer from
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
-        After installing Git, there will not be anything in your <code>/Applications</code> folder,
-        as Git is a command line program.
-        <strong>For older versions of OS X (10.5-10.8)</strong> use the
-        most recent available installer labelled "snow-leopard"
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-linux">Linux</h4>
-      <p>
-        If Git is not already available on your machine you can try to
-        install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo yum install git</code>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'Git' section. -->
-
 <div id="editor"> <!-- Start of 'editor' section. -->
   <h3>Text Editor</h3>
 
@@ -505,149 +444,6 @@ and our administrator may contact you if we need any extra information.</h4>
     </div>
   </div>
 </div> <!-- End of 'editor' section. -->
-
-<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
-           the workshop will teach Python using something other than
-           the IPython notebook.
-           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
-  <h3>Python</h3>
-
-  <p>
-    <a href="http://python.org">Python</a> is a popular language for
-    research computing, and great for general-purpose programming as
-    well.  Installing all of its research packages individually can be
-    a bit difficult, so we recommend
-    <a href="https://www.continuum.io/anaconda">Anaconda</a>,
-    an all-in-one installer.
-  </p>
-
-    <p>
-      Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.4 is fine).
-    </p>
-
-    <p>
-      We will teach Python using the IPython notebook, a programming environment
-      that runs in a web browser. For this to work you will need a reasonably
-      up-to-date browser. The current versions of the Chrome, Safari and
-      Firefox browsers are all
-      <a href="http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility">supported</a>
-      (some older browsers, including Internet Explorer version 9
-      and below, are not).
-    </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="python-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
-      <ol>
-        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Windows.</li>
-        <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
-      </ol>
-    </div>
-    <div class="col-md-4">
-      <h4 id="python-macosx">Mac OS X</h4>
-      <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
-      <ol>
-        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
-        <li>Download the Python 3 installer for OS X.</li>
-        <li>Install Python 3 using all of the defaults for installation.</li>
-      </ol>
-    </div>
-    <div class="col-md-4">
-      <h4 id="python-linux">Linux</h4>
-      <ol>
-        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Linux.<br>
-          (Installation requires using the shell. If you aren't
-           comfortable doing the installation yourself
-           stop here and request help at the workshop.)
-        </li>
-        <li>
-          Open a terminal window.
-        </li>
-        <li>
-          Type <pre>bash Anaconda3-</pre> and then press
-          tab. The name of the file you just downloaded should
-          appear. If it does not, navigate to the folder where you
-          downloaded the file, for example with:
-          <pre>cd Downloads</pre>
-          Then, try again.
-        </li>
-        <li>
-          Press enter. You will follow the text-only prompts. To move through
-          the text, press the space key. Type <code>yes</code> and
-          press enter to approve the license. Press enter to approve the
-          default location for the files. Type <code>yes</code> and
-          press enter to prepend Anaconda to your <code>PATH</code>
-          (this makes the Anaconda distribution the default Python).
-        </li>
-        <li>
-          Close the terminal window.
-      </ol>
-    </div>
-  </div>
-<!--
-  <p>
-  Once you are done installing the software listed above,
-  please go to <a href="setup/index.html">this page</a>,
-  which has instructions on how to test that everything was installed correctly.
-  </p>
--->
-</div> <!-- End of 'Python' section. -->
-
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-        Note that if you have separate user and admin accounts, you should run the 
-        installers as administrator (right-click on .exe file and select "Run as 
-        administrator" instead of double-clicking). Otherwise problems may occur later, 
-        for example when installing R packages.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
 
 <div id="sql"> <!-- Start of 'SQLite' section. -->
   <h3>SQLite</h3>
